@@ -14,6 +14,6 @@ simple as that, open issues if this bugs the fuck out in your use case, and def 
 
 the outputs items are file/folder names relative to |dir|. includes |..|, but NOT |.| for obvious reasons. (prob not so obvious now that i think abt it lmao)
 
-i will come back if i want this as a rust lib
+i will come back if i want this as a rust wrapper or smth else.
 
 ofhvbieufhvcbweufbviugewbfviuebi
