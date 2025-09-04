@@ -45,8 +45,8 @@
 		char**res=NULL;
 		int realSz = 0;
 		struct dirent*jorked = NULL;
-		DIR dObj = *opendir(dir);
-		while((jorked=readdir(&dObj))!=NULL){ // I AM FUCKING JORKING IT BABYYYYEAHHHHHH
+		DIR*dObj = opendir(dir);
+		while((jorked=readdir(dObj))!=NULL){ // I AM FUCKING JORKING IT BABYYYYEAHHHHHH
 			if(!(strcmp(jorked->d_name,".")))continue;
 			res=realloc(res,(++realSz)*sizeof(char*));
 			res[realSz-1]=malloc(strlen(jorked->d_name)+1);
