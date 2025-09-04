@@ -38,7 +38,6 @@
 		return res;
 	}
 #else
-	#include <linux/limits.h> // this is for MAX_PATH btw
 	#include <dirent.h>
 	
 	char**jorkdir(char*dir,int*sz) {
